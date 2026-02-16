@@ -288,6 +288,14 @@ a { color: inherit; text-decoration: none; }
   display: block;
 }
 
+.thumb-img--premium-twin {
+  object-position: 50% 65%;
+}
+
+.thumb-img--corridor {
+  object-position: 50% 45%;
+}
+
 .card-body { padding: 14px 16px; }
 .card-foot {
   padding: 14px 16px;

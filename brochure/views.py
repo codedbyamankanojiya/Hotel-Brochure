@@ -7,7 +7,7 @@ def _site_context():
         'hotel_name': 'Hotel Aurora',
         'tagline': 'Boutique comfort in the heart of the city',
         'phone': '+91 98765 43210',
-        'email': 'reservations@hotelaurora.example',
+        'email': 'reservations@hotelaurora',
         'address': 'MG Road, Bengaluru, Karnataka, India',
     }
 
@@ -63,14 +63,14 @@ def rooms(request):
             },
             {
                 'name': 'Premium Twin',
-                'image': 'https://source.unsplash.com/1600x900/?hotel,twin,room',
+                'image': 'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1600&q=80',
                 'desc': 'Designed for comfort with twin bedding and extra storage for longer stays.',
                 'features': ['Wi‑Fi', 'Smart TV', 'Extra wardrobe', 'Tea/coffee'],
                 'price': '₹5,499/night',
             },
             {
                 'name': 'Executive Suite',
-                'image': 'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1600&q=80',
+                'image': 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1600&q=80',
                 'desc': 'A spacious suite with a lounge corner for meetings or winding down after the city.',
                 'features': ['Wi‑Fi', 'Lounge area', 'Mini bar', 'Premium linen'],
                 'price': '₹8,999/night',
@@ -140,7 +140,7 @@ def gallery(request):
             {
                 'title': 'Corridor',
                 'hint': 'Quiet floors, thoughtful design',
-                'src': 'https://source.unsplash.com/1600x900/?hotel,corridor',
+                'src': 'https://source.unsplash.com/JxAtP5ICHkg/1600x900',
             },
             {
                 'title': 'City View',

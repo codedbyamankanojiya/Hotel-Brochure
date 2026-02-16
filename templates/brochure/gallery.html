@@ -17,7 +17,7 @@
       {% for img in images %}
         <div class="gallery-item">
           <div class="gallery-thumb">
-            <img class="thumb-img" src="{{ img.src }}" alt="{{ img.title }}" loading="lazy" />
+            <img class="thumb-img{% if img.title == 'Corridor' %} thumb-img--corridor{% endif %}" src="{{ img.src }}" alt="{{ img.title }}" loading="lazy" />
           </div>
           <div class="gallery-cap">
             <div class="gallery-title">{{ img.title }}</div>

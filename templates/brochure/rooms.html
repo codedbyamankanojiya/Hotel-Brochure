@@ -17,7 +17,7 @@
       {% for r in rooms %}
         <article class="card card-room">
           <div class="room-thumb">
-            <img class="thumb-img" src="{{ r.image }}" alt="{{ r.name }}" loading="lazy" />
+            <img class="thumb-img{% if r.name == 'Premium Twin' %} thumb-img--premium-twin{% endif %}" src="{{ r.image }}" alt="{{ r.name }}" loading="lazy" />
           </div>
           <div class="card-body">
             <div class="card-title">{{ r.name }}</div>
