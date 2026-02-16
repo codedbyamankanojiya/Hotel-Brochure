@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#070b14"/>
+    </linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c5cff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#22c55e" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect x="140" y="190" width="920" height="520" rx="30" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="200" y="250" width="800" height="70" rx="18" fill="url(#g)" opacity="0.16"/>
+  <rect x="220" y="360" width="220" height="260" rx="18" fill="rgba(0,0,0,0.22)" stroke="rgba(255,255,255,0.10)"/>
+  <rect x="490" y="360" width="220" height="260" rx="18" fill="rgba(0,0,0,0.22)" stroke="rgba(255,255,255,0.10)"/>
+  <rect x="760" y="360" width="220" height="260" rx="18" fill="rgba(0,0,0,0.22)" stroke="rgba(255,255,255,0.10)"/>
+  <text x="110" y="110" fill="rgba(255,255,255,0.92)" font-family="Inter,Segoe UI,Arial" font-size="46" font-weight="800">Corridor</text>
+  <text x="110" y="145" fill="rgba(255,255,255,0.70)" font-family="Inter,Segoe UI,Arial" font-size="22" font-weight="600">Quiet floors, thoughtful design</text>
+</svg>

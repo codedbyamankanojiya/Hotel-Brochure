@@ -1,0 +1,40 @@
+{% extends 'brochure/base.html' %}
+{% load static %}
+
+{% block title %}{{ hotel_name }} | Rooms{% endblock %}
+
+{% block content %}
+<section class="page-head">
+  <div class="container">
+    <h1 class="page-title">Rooms & Suites</h1>
+    <p class="page-sub">Comfortable interiors, calm lighting, and essentials that make the stay effortless.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid-3">
+      {% for r in rooms %}
+        <article class="card card-room">
+          <div class="room-thumb">
+            <img class="thumb-img" src="{{ r.image }}" alt="{{ r.name }}" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-title">{{ r.name }}</div>
+            <div class="muted" style="margin-top: 6px;">{{ r.desc }}</div>
+            <div class="chips">
+              {% for f in r.features %}
+                <span class="chip">{{ f }}</span>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="card-foot">
+            <div class="price">{{ r.price }}</div>
+            <a class="btn btn-primary" href="{% url 'contact' %}">Enquire</a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'brochure/base.html' %}
+
+{% block title %}{{ hotel_name }} | Amenities{% endblock %}
+
+{% block content %}
+<section class="page-head">
+  <div class="container">
+    <h1 class="page-title">Amenities</h1>
+    <p class="page-sub">Everything you need for business and leisure—simple, reliable, and always available.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid-3">
+      {% for a in amenities %}
+        <div class="card">
+          <div class="card-title">{{ a.title }}</div>
+          <div class="muted" style="margin-top: 6px;">{{ a.desc }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container callout">
+    <div>
+      <div class="callout-title">Need something specific?</div>
+      <div class="muted">Ask our team—we’ll try our best to arrange it for you.</div>
+    </div>
+    <a class="btn btn-primary" href="{% url 'contact' %}">Contact Front Desk</a>
+  </div>
+</section>
+{% endblock %}

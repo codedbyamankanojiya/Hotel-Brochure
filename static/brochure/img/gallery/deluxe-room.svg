@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#070b14"/>
+    </linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22c55e" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#7c5cff" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="330" cy="280" r="260" fill="#22c55e" opacity="0.14"/>
+  <circle cx="900" cy="240" r="240" fill="#7c5cff" opacity="0.16"/>
+  <rect x="120" y="430" width="960" height="220" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="200" y="380" width="380" height="110" rx="22" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="640" y="380" width="380" height="110" rx="22" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="160" y="210" width="880" height="180" rx="30" fill="url(#g)" opacity="0.14"/>
+  <text x="110" y="110" fill="rgba(255,255,255,0.92)" font-family="Inter,Segoe UI,Arial" font-size="46" font-weight="800">Deluxe Room</text>
+  <text x="110" y="145" fill="rgba(255,255,255,0.70)" font-family="Inter,Segoe UI,Arial" font-size="22" font-weight="600">Relaxed, calm interior tones</text>
+</svg>

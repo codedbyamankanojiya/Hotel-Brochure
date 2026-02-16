@@ -1,0 +1,73 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}{{ hotel_name }}{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'brochure/css/site.css' %}" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="{% url 'home' %}">
+          <span class="brand-mark"></span>
+          <span class="brand-text">
+            <span class="brand-name">{{ hotel_name }}</span>
+            <span class="brand-tagline">{{ tagline }}</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link" href="{% url 'home' %}">Home</a>
+          <a class="nav-link" href="{% url 'rooms' %}">Rooms</a>
+          <a class="nav-link" href="{% url 'amenities' %}">Amenities</a>
+          <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+          <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+        </nav>
+
+        <a class="btn btn-primary header-cta" href="{% url 'contact' %}">Book / Enquire</a>
+      </div>
+    </header>
+
+    {% if messages %}
+      <div class="container" style="margin-top: 14px;">
+        {% for message in messages %}
+          <div class="alert {% if message.tags %}alert-{{ message.tags }}{% endif %}">
+            {{ message }}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="footer-title">{{ hotel_name }}</div>
+          <div class="muted">{{ address }}</div>
+        </div>
+        <div>
+          <div class="footer-title">Contact</div>
+          <div class="muted">Phone: {{ phone }}</div>
+          <div class="muted">Email: {{ email }}</div>
+        </div>
+        <div>
+          <div class="footer-title">Quick Links</div>
+          <a class="footer-link" href="{% url 'rooms' %}">Rooms</a>
+          <a class="footer-link" href="{% url 'amenities' %}">Amenities</a>
+          <a class="footer-link" href="{% url 'gallery' %}">Gallery</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span class="muted">© {% now 'Y' %} {{ hotel_name }}. All rights reserved.</span>
+      </div>
+    </footer>
+  </body>
+</html>

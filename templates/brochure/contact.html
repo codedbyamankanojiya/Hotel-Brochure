@@ -1,0 +1,53 @@
+{% extends 'brochure/base.html' %}
+
+{% block title %}{{ hotel_name }} | Contact{% endblock %}
+
+{% block content %}
+<section class="page-head">
+  <div class="container">
+    <h1 class="page-title">Contact & Enquiry</h1>
+    <p class="page-sub">Share your dates and preferences—our team will respond shortly.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-grid">
+    <div class="card">
+      <div class="card-title">Send a message</div>
+      <form method="post" class="form" style="margin-top: 12px;">
+        {% csrf_token %}
+        <label class="field">
+          <span class="field-label">Your name</span>
+          <input class="input" name="name" placeholder="Full name" />
+        </label>
+        <label class="field">
+          <span class="field-label">Email</span>
+          <input class="input" name="email" type="email" placeholder="you@example.com" />
+        </label>
+        <label class="field">
+          <span class="field-label">Message</span>
+          <textarea class="textarea" name="message" rows="5" placeholder="Dates, guests, room preference..."></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Send</button>
+      </form>
+    </div>
+
+    <div>
+      <div class="card">
+        <div class="card-title">Direct contact</div>
+        <div class="muted" style="margin-top: 10px;">{{ address }}</div>
+        <div class="divider"></div>
+        <div class="muted"><strong>Phone:</strong> {{ phone }}</div>
+        <div class="muted"><strong>Email:</strong> {{ email }}</div>
+      </div>
+
+      <div class="card" style="margin-top: 14px;">
+        <div class="card-title">Check‑in info</div>
+        <div class="muted" style="margin-top: 10px;">Check‑in: 2:00 PM</div>
+        <div class="muted">Check‑out: 11:00 AM</div>
+        <div class="muted">ID required at arrival</div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'brochure/base.html' %}
+{% load static %}
+
+{% block title %}{{ hotel_name }} | Gallery{% endblock %}
+
+{% block content %}
+<section class="page-head">
+  <div class="container">
+    <h1 class="page-title">Gallery</h1>
+    <p class="page-sub">A glimpse of the spaces—designed to feel polished, warm, and restful.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="gallery">
+      {% for img in images %}
+        <div class="gallery-item">
+          <div class="gallery-thumb">
+            <img class="thumb-img" src="{{ img.src }}" alt="{{ img.title }}" loading="lazy" />
+          </div>
+          <div class="gallery-cap">
+            <div class="gallery-title">{{ img.title }}</div>
+            <div class="muted">{{ img.hint }}</div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

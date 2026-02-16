@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#070b14"/>
+    </linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0ea5e9" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#7c5cff" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="310" cy="250" r="250" fill="#0ea5e9" opacity="0.14"/>
+  <circle cx="890" cy="300" r="290" fill="#7c5cff" opacity="0.14"/>
+  <rect x="120" y="380" width="960" height="270" rx="30" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="170" y="430" width="560" height="160" rx="26" fill="rgba(0,0,0,0.22)" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="760" y="430" width="270" height="160" rx="26" fill="rgba(0,0,0,0.22)" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="160" y="210" width="880" height="150" rx="30" fill="url(#g)" opacity="0.14"/>
+  <text x="110" y="110" fill="rgba(255,255,255,0.92)" font-family="Inter,Segoe UI,Arial" font-size="46" font-weight="800">Suite</text>
+  <text x="110" y="145" fill="rgba(255,255,255,0.70)" font-family="Inter,Segoe UI,Arial" font-size="22" font-weight="600">Extra space for comfort</text>
+</svg>
