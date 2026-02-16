@@ -140,7 +140,7 @@ def gallery(request):
             {
                 'title': 'Corridor',
                 'hint': 'Quiet floors, thoughtful design',
-                'src': 'https://source.unsplash.com/JxAtP5ICHkg/1600x900',
+                'src': 'https://unsplash.com/photos/JxAtP5ICHkg/download?force=true',
             },
             {
                 'title': 'City View',

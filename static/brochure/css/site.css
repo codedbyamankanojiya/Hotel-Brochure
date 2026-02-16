@@ -58,7 +58,13 @@ a { color: inherit; text-decoration: none; }
   height: 38px;
   border-radius: 12px;
   background: linear-gradient(135deg, rgba(124, 92, 255, 1), rgba(34, 197, 94, 0.95));
+  overflow: hidden;
   box-shadow: var(--shadow);
+}
+.brand-logo {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 .brand-text { display: flex; flex-direction: column; line-height: 1.1; }
 .brand-name { font-weight: 700; letter-spacing: 0.2px; }
@@ -252,6 +258,28 @@ a { color: inherit; text-decoration: none; }
   min-height: 320px;
   position: relative;
   overflow: hidden;
+}
+
+.photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(7, 11, 20, 0.10), rgba(7, 11, 20, 0.55));
+  z-index: 1;
+}
+
+.photo-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  z-index: 0;
+}
+
+.photo-badge {
+  z-index: 2;
 }
 
 .photo-badge {
